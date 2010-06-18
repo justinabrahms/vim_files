@@ -49,7 +49,7 @@ let mapleader = ","
 set tags=tags;$HOME/.vim/tags/ "recursively searches directory for 'tags' file
 
 " TagList Plugin Configuration
-let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags' " point taglist to ctags
+let Tlist_Ctags_Cmd='/usr/bin/ctags' " point taglist to ctags
 let Tlist_GainFocus_On_ToggleOpen = 1      " Focus on the taglist when its toggled
 let Tlist_Close_On_Select = 1              " Close when something's selected
 let Tlist_Use_Right_Window = 1             " Project uses the left window
@@ -68,11 +68,10 @@ autocmd!
 syntax on                 " syntax highlighing
 if has("gui_running")
     " See ~/.gvimrc
-    set guifont=Consolas:h12.00  " use this font
+    set guifont=ProggyCleanTT\ 12.00  " use this font
     set lines=50          " height = 50 lines
     set columns=120       " width = 100 columns
     set background=dark   " adapt colors for background
-    set transparency=5    " Barely transparent
     set guioptions-=T
     set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅ " mark trailing white space
     colorscheme brookstream
